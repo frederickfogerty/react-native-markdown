@@ -182,6 +182,8 @@ var Markdown = React.createClass({
       imageParam: this.props.imageParam,
       onLink: this.props.onLink,
       bgImage: this.props.bgImage,
+      onImageOpen: this.props.onImageOpen,
+      onImageClose: this.props.onImageClose,
     }
 
     var mergedStyles = _.merge({}, styles, this.props.style);

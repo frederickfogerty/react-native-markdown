@@ -126,6 +126,8 @@ module.exports = function(styles, opts={}) {
           return React.createElement(Lightbox, {
             activeProps: styles.imageBox,
             navigator,
+            onOpen: opts.onImageOpen,
+            onClose: opts.onImageClose,
           }, image)
         }
         return image
